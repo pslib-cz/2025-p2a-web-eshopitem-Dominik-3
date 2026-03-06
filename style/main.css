@@ -1,0 +1,52 @@
+:root{
+    --text-color:#000;
+    --odkaz-color: #1010f0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%,360px),1fr));
+    grid-template-rows: repeat(auto, 5);
+    row-gap: 1em;
+}
+
+.card {
+    display: grid;
+    grid-row: span 5;
+    grid-template-rows: subgrid;
+}
+
+.SaberName {
+    display: flex;
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: x-large;
+    max-width: 360px;
+    word-wrap: wrap;
+}
+
+.SaberPrice{
+    display: flex;
+    word-wrap: wrap;
+    gap: 1em;
+}
+
+.SaberPrice__regular{
+    display: inline;
+    font-size: x-small;
+    text-decoration: line-through;
+    align-content: center;
+}
+
+.SaberPrice__sale{
+    display: inline;
+}
+
+.rating{
+
+}
